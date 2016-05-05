@@ -113,23 +113,23 @@
 
 - (void)loadView
 {
-    self.wantsFullScreenLayout = YES;
-    
-    // This will be overlaid with the actual AR view.
-    NSString *irisImage = nil;
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        irisImage = @"Iris-iPad.png";
-    }  else { // UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone
-        CGSize result = [[UIScreen mainScreen] bounds].size;
-        if (result.height == 568) {
-            irisImage = @"Iris-568h.png"; // iPhone 5, iPod touch 5th Gen, etc.
-        } else { // result.height == 480
-            irisImage = @"Iris.png";
-        }
-    }
-    UIView *irisView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:irisImage]] autorelease];
-    irisView.userInteractionEnabled = YES;
-    self.view = irisView;
+//    self.wantsFullScreenLayout = YES;
+//    
+//    // This will be overlaid with the actual AR view.
+//    NSString *irisImage = nil;
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        irisImage = @"Iris-iPad.png";
+//    }  else { // UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone
+//        CGSize result = [[UIScreen mainScreen] bounds].size;
+//        if (result.height == 568) {
+//            irisImage = @"Iris-568h.png"; // iPhone 5, iPod touch 5th Gen, etc.
+//        } else { // result.height == 480
+//            irisImage = @"Iris.png";
+//        }
+//    }
+//    UIView *irisView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:irisImage]] autorelease];
+//    irisView.userInteractionEnabled = YES;
+//    self.view = irisView;
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
