@@ -59,6 +59,7 @@
 //#import <UIKit/UIKit.h> // Using precompiled header.
 #import <AR/ar.h>
 #import <AR/arFilterTransMat.h>
+#import <UIKit/UIKit.h>
 
 // The macro "WITH_NFT" is normally defined in build settings for projects
 // that support NFT.
