@@ -13,8 +13,9 @@
 #import <AR/video.h>
 #import <AR/gsub_es.h>
 #import "../ARAppCore/ARView.h"
-//#import "../ARAppCore/ARMarker.h"
-//#import "../ARAppCore/VirtualEnvironment.h"
+#import "../ARAppCore/ARMarker.h"
+#import "../ARAppCore/VirtualEnvironment.h"
+#import "../ARAppNFTOSG/ARViewController.h"
 #import <AR/sys/CameraVideo.h>
 //
 #import <pthread.h>

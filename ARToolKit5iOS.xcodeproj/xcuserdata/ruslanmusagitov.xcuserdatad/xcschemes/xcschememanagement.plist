@@ -14,36 +14,6 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>ARApp.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>ARApp2.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>ARAppCameraTest.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>ARAppES1.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
-		<key>ARAppMovie.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>ARAppNFT.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
 		<key>ARAppNFTOSFSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -53,11 +23,6 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
-		</dict>
-		<key>ARAppOSG.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>ARICP.xcscheme_^#shared#^_</key>
 		<dict>
@@ -113,11 +78,6 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>19</integer>
-		</dict>
-		<key>ArAppNFTOSGSwift.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>24</integer>
 		</dict>
 		<key>Configure.xcscheme_^#shared#^_</key>
 		<dict>
