@@ -458,6 +458,7 @@
 		4AF9712B1B5F5709001BFEB5 /* timers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9706A1B5F5708001BFEB5 /* timers.cpp */; };
 		4AF9712D1B5F5709001BFEB5 /* freak.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF970771B5F5708001BFEB5 /* freak.cpp */; };
 		4AF9712E1B5F5709001BFEB5 /* hough_similarity_voting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AF9707A1B5F5708001BFEB5 /* hough_similarity_voting.cpp */; };
+		81A18FEE1CDB97EE008265F2 /* SwiftARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A18FED1CDB97EE008265F2 /* SwiftARViewController.swift */; };
 		81ED7C231CDB788200B0C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED7C1B1CDB788200B0C5F2 /* AppDelegate.swift */; };
 		81ED7C241CDB788200B0C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81ED7C1C1CDB788200B0C5F2 /* Assets.xcassets */; };
 		81ED7C251CDB788200B0C5F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81ED7C1D1CDB788200B0C5F2 /* LaunchScreen.storyboard */; };
@@ -2374,6 +2375,8 @@
 		78BB3F2008E4837000D7CA2D /* video.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = video.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		78BB3F2108E4837000D7CA2D /* videoConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = videoConfig.h; sourceTree = "<group>"; };
 		78BB3F5208E483CB00D7CA2D /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		81A18FEC1CDB97ED008265F2 /* ARAppNFTOSG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARAppNFTOSG-Bridging-Header.h"; sourceTree = "<group>"; };
+		81A18FED1CDB97EE008265F2 /* SwiftARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftARViewController.swift; sourceTree = "<group>"; };
 		81ED7BDC1CDB73A700B0C5F2 /* ARAppNFTOSFSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARAppNFTOSFSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81ED7C1B1CDB788200B0C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81ED7C1C1CDB788200B0C5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -2613,10 +2616,12 @@
 		4A13023615BDF8F2003A441C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				81A18FED1CDB97EE008265F2 /* SwiftARViewController.swift */,
 				4A13023C15BDF8F2003A441C /* ARAppNFTOSGDelegate.h */,
 				4A13023D15BDF8F2003A441C /* ARAppNFTOSGDelegate.m */,
 				4A13023E15BDF8F2003A441C /* ARViewController.h */,
 				4A13023F15BDF8F2003A441C /* ARViewController.m */,
+				81A18FEC1CDB97ED008265F2 /* ARAppNFTOSG-Bridging-Header.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -5518,6 +5523,7 @@
 				4A33B6D418ADB9440028A979 /* VEObjectOBJ.m in Sources */,
 				4A347B3C18B16329000BEB89 /* ARMarkerMulti.m in Sources */,
 				4A33B6CC18ADB8700028A979 /* EAGLView.m in Sources */,
+				81A18FEE1CDB97EE008265F2 /* SwiftARViewController.swift in Sources */,
 				4A33B6E918ADBA2F0028A979 /* ARMarkerSquare.m in Sources */,
 				4A33B6E318ADBA0F0028A979 /* ARMarkerNFT.m in Sources */,
 				4A33B6DC18ADB97B0028A979 /* VEObject.m in Sources */,
@@ -6109,8 +6115,10 @@
 		4A1302F915BDFF14003A441C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppNFTOSG/ARAppNFTOSG_Prefix.pch;
@@ -6120,9 +6128,12 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "examples/ARAppNFTOSG/ARAppNFTOSG-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synergy.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = ARAppNFTOSG;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "examples/ARAppNFTOSG/ARAppNFTOSG-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6130,8 +6141,10 @@
 		4A1302FA15BDFF14003A441C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppNFTOSG/ARAppNFTOSG_Prefix.pch;
@@ -6141,9 +6154,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "examples/ARAppNFTOSG/ARAppNFTOSG-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synergy.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = ARAppNFTOSG;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "examples/ARAppNFTOSG/ARAppNFTOSG-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -6151,9 +6166,11 @@
 		4A1302FB15BDFF14003A441C /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = examples/ARAppOSG/dist.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = examples/ARAppNFTOSG/ARAppNFTOSG_Prefix.pch;
@@ -6163,9 +6180,11 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "examples/ARAppNFTOSG/ARAppNFTOSG-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.synergy.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = ARAppNFTOSG;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "examples/ARAppNFTOSG/ARAppNFTOSG-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -6966,6 +6985,7 @@
 		81ED7BEC1CDB73A700B0C5F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -7284,6 +7304,7 @@
 				81ED7BEE1CDB73A700B0C5F2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

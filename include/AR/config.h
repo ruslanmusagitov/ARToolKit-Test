@@ -470,7 +470,7 @@ enum {
 
 #if TARGET_IPHONE_SIMULATOR
 
-#error This release does not support the simulator. Please target an iOS device.
+//#error This release does not support the simulator. Please target an iOS device.
 #define ARDOUBLE_IS_FLOAT
 #define AR_INPUT_DUMMY
 #define AR_DEFAULT_INPUT_DUMMY

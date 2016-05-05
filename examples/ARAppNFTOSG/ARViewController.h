@@ -78,6 +78,12 @@
 - (IBAction)stop;
 - (void) processFrame:(AR2VideoBufferT *)buffer;
 
+- (void) loadNFTData;
+- (void) startRunLoop;
+- (void) stopRunLoop;
+- (void) setRunLoopInterval:(NSInteger)interval;
+- (void) mainLoop;
+
 // Markers.
 @property (readonly) NSMutableArray *markers;
 

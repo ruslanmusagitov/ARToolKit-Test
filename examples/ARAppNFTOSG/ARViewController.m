@@ -60,11 +60,6 @@
 //
 
 @interface ARViewController (ARViewControllerPrivate)
-- (void) loadNFTData;
-- (void) startRunLoop;
-- (void) stopRunLoop;
-- (void) setRunLoopInterval:(NSInteger)interval;
-- (void) mainLoop;
 @end
 
 @implementation ARViewController {
